@@ -1,0 +1,14 @@
+Python 3.8.10
+will update later with versions
+packages:
+
+torch
+accelerate
+transformers
+datasets
+huggingface_hub
+evaluate
+datasets
+requests
+pandas
+sklearn
