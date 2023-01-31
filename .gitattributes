@@ -1,0 +1,2 @@
+IPG_RefSeq/IPG_RefSeq_NotToxins/ipg_refseq_not_toxins_not_virus_length4to500.fasta filter=lfs diff=lfs merge=lfs -text
+IPG_RefSeq/IPG_RefSeq_Toxins/ipg_refseq_toxins_not_virus_length4to500.fasta filter=lfs diff=lfs merge=lfs -text
