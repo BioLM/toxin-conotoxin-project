@@ -1,2 +1,6 @@
 IPG_RefSeq/IPG_RefSeq_NotToxins/ipg_refseq_not_toxins_not_virus_length4to500.fasta filter=lfs diff=lfs merge=lfs -text
 IPG_RefSeq/IPG_RefSeq_Toxins/ipg_refseq_toxins_not_virus_length4to500.fasta filter=lfs diff=lfs merge=lfs -text
+UniRef/UniRef_Toxins filter=lfs diff=lfs merge=lfs -text
+UniRef/UniRef_Toxins/toxins_uniref_length4to500_90level.tsv filter=lfs diff=lfs merge=lfs -text
+UniRef/UniRef_Toxins/toxins_uniref_length4to500_50level.tsv filter=lfs diff=lfs merge=lfs -text
+UniRef/UniRef_Toxins/toxins_uniref_length4to500_100level.tsv filter=lfs diff=lfs merge=lfs -text
