@@ -23,9 +23,10 @@ def get_batch(batch_url):
         batch_url = get_next_link(response.headers)
 
 
-url ='https://rest.uniprot.org/uniref/search?fields=id%2Cname%2Ctypes%2Ccount%2Corganism%2Clength%2Cidentity%2Csequence&format=tsv&query=%28%28length%3A%5B4%20TO%20500%5D%29%20NOT%20toxin%20NOT%20virus%29%20AND%20%28identity%3A0.9%29&size=500'
-progress = 0
-
+#url ='https://rest.uniprot.org/uniref/search?fields=id%2Cname%2Ctypes%2Ccount%2Corganism%2Clength%2Cidentity%2Csequence&format=tsv&query=%28%28length%3A%5B4%20TO%20500%5D%29%20NOT%20toxin%20NOT%20virus%29%20AND%20%28identity%3A0.9%29&size=500'
+url = 'https://rest.uniprot.org/uniref/search?format=tsv&fields=id,name,types,count,organism,length,identity,sequence&query=((length:%5B4%20TO%20500%5D)%20NOT%20toxin%20NOT%20virus)%20AND%20(identity:0.9)&cursor=ymuqqjlw6c6siflrfu2nz99vucmh1reku073xo20qr8vazomyflcvzo0w5pk8jh&size=500'
+#progress = 0
+progress = 22014500
 for batch, total, link in get_batch(url):
     lines = batch.text.splitlines()
     with open('/home/chance/biolmtoxin/toxin-conotoxin-project/UniRef/UniRef_NotToxins/90level/ntref100-4to500#'+str(progress)+'.tsv', 'w') as f:
