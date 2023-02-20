@@ -1,10 +1,16 @@
-torch
-accelerate
-transformers
+huggingface
+huggingface-hub
+six
+tokenizers
+transformers @ git+https://github.com/huggingface/transformers@bd469c40659ce76c81f69c7726759d249b4aef49
 datasets
-huggingface_hub
 evaluate
-datasets
-requests
-pandas
-scikit-learn
+accelerate
+mlflow
+boto3==1.21.18
+botocore==1.24.18
+databricks-cli
+scipy==1.7.*
+numpy==1.20.*
+torch-model-archiver
+Biopython
